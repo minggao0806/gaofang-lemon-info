@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>首页</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="./css/index.css" />
+		<link rel="stylesheet" type="text/css" href="./css/mui.picker.css" />
+		<link rel="stylesheet" type="text/css" href="./css/mui.poppicker.css" />
+		<link rel="stylesheet" type="text/css" href="./css/mui.dtpicker.css" />
+
+
+		<style>
+			/* html,
+			body {
+				width: 100%;
+				height: 100%;
+			} */
+		</style>
+	</head>
+	<body>
+
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 菜单容器 -->
+			<aside class="mui-off-canvas-left">
+				<div class="mui-scroll-wrapper">
+					<div class="mui-scroll">
+						<!-- 菜单具体展示内容 -->
+						<button type="button" class='close-btn'>
+							关闭侧边栏
+						</button>
+					</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- 主页面标题 -->
+				<header class="header">
+					<p>本月花费(元)</p>
+					<div class="totalMoney">
+						<span>8036</span>
+					</div>
+					<div class="get-money">
+						<p>本月收入<span></span></p>
+					</div>
+					<div class="type">
+						<span class="month">月</span>
+						<span class="year">2018 - 12</span>
+					</div>
+				</header>
+				<div class="mui-content">
+					<div class="choose">
+						<div class="choose-left">
+							<span class="mui-icon mui-icon-paperclip"></span>
+						</div>
+						<div class="choose-center">
+							<div class="choose-center-bill active" data-id='0'>
+								<span>账单</span>
+							</div>
+							<div class="choose-center-bill" data-id='1'>
+								<span>图表</span>
+							</div>
+
+						</div>
+						<div class="choose-right">
+							<span class="mui-icon mui-icon-search"></span>
+
+						</div>
+					</div>
+
+					<!-- 滚动区域 -->
+					<div class="mui-scroll-wrapper">
+						<div class="mui-scroll">
+							<div class="mui-scroll-bill">
+								<div class="month-click">
+									<div class="month-click-total">
+										<div class="month-click-left">
+											<span class="mui-icon mui-icon-camera"></span>
+											<span>10月19日</span>
+										</div>
+										<div class="month-click-right">
+											<span>花费 8034.00</span>
+										</div>
+									</div>
+									<ul id="OA_task_1" class="mui-table-view">
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<div class="delete-left">
+													<span class="mui-icon mui-icon-weixin"></span>
+													<span>住宿</span>
+												</div>
+												<div class="delete-right">
+													<span>85.00</span>
+												</div>
+											</div>
+										</li>
+										<li class="mui-table-view-cell">
+											<div class="mui-slider-right mui-disabled">
+												<a class="mui-btn mui-btn-red">删除</a>
+											</div>
+											<div class="mui-slider-handle">
+												<div class="delete-left">
+													<span class="mui-icon mui-icon-weixin"></span>
+													<span>住宿</span>
+												</div>
+												<div class="delete-right">
+													<span>85.00</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="year-click">
+									<ul class="mui-table-view">
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right" href="#">
+												<div class="classify-tab">
+													<div class="classify-tab-list">
+														<div class="classify-month">
+															<span class="mui-icon mui-icon-camera"></span>
+															<span>10月</span>
+														</div>
+														<div class="classify-money ">
+															<span class="pink">花费</span>
+															<span class="pink">8125.00</span>
+														</div>
+														<div class="classify-money">
+															<span class="green">收入</span>
+															<span class="green">8125.00</span>
+														</div>
+														<div class="classify-money">
+															<span class="gray">结余</span>
+															<span class="gray">8125.00</span>
+														</div>
+													</div>
+													
+												</div>
+											</a>
+											<div class="mui-collapse-content">
+												<div class="bill-list-year">
+													<ul id="OA_task_1" class="mui-table-view">
+														<li class="mui-table-view-cell">
+															<div class="mui-slider-right mui-disabled">
+																<a class="mui-btn mui-btn-red">删除</a>
+															</div>
+															<div class="mui-slider-handle">
+																<div class="delete-left">
+																	<span class="mui-icon mui-icon-weixin"></span>
+																	<span>住宿</span>
+																</div>
+																<div class="delete-right">
+																	<span>85.00</span>
+																</div>
+															</div>
+														</li>
+														<li class="mui-table-view-cell">
+															<div class="mui-slider-right mui-disabled">
+																<a class="mui-btn mui-btn-red">删除</a>
+															</div>
+															<div class="mui-slider-handle">
+																<div class="delete-left">
+																	<span class="mui-icon mui-icon-weixin"></span>
+																	<span>住宿</span>
+																</div>
+																<div class="delete-right">
+																	<span>85.00</span>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
+									<ul>
+										<li>112</li>
+										<li>1231</li>
+										<li>123</li>
+										<li>123</li>
+										<li>13</li>
+										<li>13</li>
+										<li>112</li>
+										<li>1231</li>
+										<li>123</li>
+										<li>123</li>
+										<li>123</li>
+										<li>13</li>
+										<li>13</li>
+										<li>112</li>
+										<li>1231</li>
+										<li>123</li>
+										<li>123</li>
+										<li>13</li>
+										<li>13</li>
+										<li>112</li>
+										<li>1231</li>
+										<li>123</li>
+										<li>123</li>
+										<li>13</li>
+										<li>13</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- echarts盒子 -->
+							<div class="mui-scroll-bill">
+								<div id="main" style="width: 400px;height:300px;margin:0 auto"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				//加号添加账单
+				<div class="add-bill-btn">
+					<img src="img/plus.png" >
+				</div>
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="#tabbar">
+						<span class="mui-icon mui-icon-home"></span>
+						<span class="mui-tab-label">首页</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-chat">
+						<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+						<span class="mui-tab-label">圈子</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-contact">
+						<span class="mui-icon mui-icon-contact"></span>
+						<span class="mui-tab-label">撒钱中</span>
+					</a>
+					<a class="mui-tab-item" href="#tabbar-with-map">
+						<span class="mui-icon mui-icon-gear"></span>
+						<span class="mui-tab-label">我的</span>
+					</a>
+				</nav>
+				<div class="mui-off-canvas-backdrop"></div>
+			</div>
+		</div>
+		<script src="js/libs/require.js" data-main='./js/page/index.js'></script>
+	</body>
+</html>

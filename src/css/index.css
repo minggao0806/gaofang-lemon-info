@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.mui-inner-wrap {
+  display: flex;
+  flex-direction: column; }
+  .mui-inner-wrap header {
+    height: 120px;
+    background: #ffe344;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px; }
+    .mui-inner-wrap header > p {
+      color: #000;
+      height: 31px;
+      padding-top: 5px;
+      line-height: 21px; }
+    .mui-inner-wrap header p {
+      color: #000; }
+    .mui-inner-wrap header .totalMoney {
+      flex: 1; }
+      .mui-inner-wrap header .totalMoney span {
+        font-size: 38px;
+        font-weight: bold; }
+    .mui-inner-wrap header .get-money {
+      height: 32px; }
+    .mui-inner-wrap header .type {
+      position: absolute;
+      top: 15px;
+      right: 10px; }
+      .mui-inner-wrap header .type span {
+        padding: 5px 16px;
+        border: 1px solid #000;
+        border-radius: 20px; }
+
+.mui-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1; }
+  .mui-content .choose {
+    display: flex;
+    margin: 10px 0;
+    height: 40px; }
+    .mui-content .choose > div {
+      height: 100%; }
+    .mui-content .choose .choose-left {
+      width: 31%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; }
+      .mui-content .choose .choose-left span {
+        padding-left: 10px; }
+    .mui-content .choose .choose-center {
+      width: 38%;
+      height: 35px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      display: flex;
+      overflow: hidden; }
+      .mui-content .choose .choose-center .choose-center-bill {
+        width: 50%; }
+        .mui-content .choose .choose-center .choose-center-bill span {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          line-height: 35px;
+          text-align: center;
+          color: #b5b5b5; }
+      .mui-content .choose .choose-center .active {
+        background: #ffe344;
+        color: #3e3c2e; }
+    .mui-content .choose .choose-right {
+      width: 31%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; }
+      .mui-content .choose .choose-right span {
+        padding-right: 15px; }
+  .mui-content .classify-tab {
+    width: 100%;
+    height: 55px;
+    display: flex; }
+    .mui-content .classify-tab .classify-tab-list {
+      width: 90%;
+      height: 100%;
+      display: flex; }
+      .mui-content .classify-tab .classify-tab-list .classify-month {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .mui-content .classify-tab .classify-tab-list .classify-money {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .mui-content .classify-tab .classify-tab-list .classify-money span {
+          font-size: 13px; }
+      .mui-content .classify-tab .classify-tab-list .pink {
+        color: #fc7c7c; }
+      .mui-content .classify-tab .classify-tab-list .green {
+        color: #4bdeaf; }
+      .mui-content .classify-tab .classify-tab-list .gray {
+        color: #b2b2b2; }
+      .mui-content .classify-tab .classify-tab-list > div {
+        width: 25%; }
+    .mui-content .classify-tab .show-up {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  .mui-content .scroll-y {
+    position: relative;
+    flex: 1; }
+  .mui-content .mui-scroll-wrapper {
+    top: 50px; }
+    .mui-content .mui-scroll-wrapper .mui-scroll-bill:nth-of-type(2) {
+      display: none; }
+    .mui-content .mui-scroll-wrapper .year-click {
+      display: none; }
+    .mui-content .mui-scroll-wrapper .month-click-total {
+      display: flex;
+      justify-content: space-between; }
+    .mui-content .mui-scroll-wrapper .mui-slider-handle {
+      display: flex;
+      justify-content: space-between; }
+      .mui-content .mui-scroll-wrapper .mui-slider-handle .delete-left > span:nth-of-type(1) {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        line-height: 45px;
+        text-align: center;
+        background: #ffe344; }
+      .mui-content .mui-scroll-wrapper .mui-slider-handle .delete-right span {
+        line-height: 45px; }
+
+.add-bill-btn {
+  width: 80px;
+  height: 80px;
+  background: #ffe344;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  z-index: 99;
+  margin-left: -40px;
+  text-align: center;
+  line-height: 80px; }
+  .add-bill-btn img {
+    margin-top: 18px; }

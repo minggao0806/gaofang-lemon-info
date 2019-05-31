@@ -1,0 +1,219 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.mui-inner-wrap{
+	display: flex;
+	flex-direction: column;
+	
+	header{
+		height: 120px;
+		background: rgb(255,227,68);
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding-left: 20px;
+		
+		&>p{
+			color: #000;
+			height: 31px;
+			padding-top: 5px;
+			line-height: 21px;
+		}
+		p{
+			color: #000;
+		}
+		.totalMoney{
+			flex: 1;
+			
+			span{
+				font-size: 38px;
+				font-weight: bold;
+			}
+		}
+		.get-money{
+			height: 32px;
+		}
+		.type{
+			position: absolute;
+			top:15px;
+			right:10px;
+			
+			
+			span{
+				padding: 5px 16px;
+				border: 1px solid #000;
+				border-radius: 20px;
+			}
+		}
+	}
+}
+.mui-content{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	flex: 1;
+	
+	.choose{
+		display: flex;
+		margin: 10px 0;
+		height: 40px;
+		&>div{
+			height: 100%;
+		}
+		.choose-left{
+			width: 31%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			
+			span{
+				padding-left: 10px;
+			}
+		}
+		.choose-center{
+			width: 38%;
+			height: 35px;
+			border: 1px solid #ccc;
+			border-radius: 20px;
+			display: flex;
+			overflow: hidden;
+			
+			.choose-center-bill{
+				width: 50%;
+				// padding: 5px;
+				span{
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+					line-height: 35px;
+					text-align: center;
+					color: rgb(181,181,181);
+				}
+				
+			}
+			.active{
+				background: rgb(255,227,68);
+				color: rgb(62,60,46);
+			}
+		}
+		.choose-right{
+			width: 31%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			span{
+				padding-right: 15px;
+			}
+		}
+	}
+	
+	.classify-tab{
+		width: 100%;
+		height: 55px;
+		display: flex;
+		
+		.classify-tab-list{
+			width: 90%;
+			height: 100%;
+			display: flex;
+			
+			.classify-month{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			
+			.classify-money{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				
+				span{
+					font-size: 13px;
+				}
+			}
+			.pink{
+				color: rgb(252,124,124);
+			}
+			.green{
+				color: rgb(75,222,175);
+			}
+			.gray{
+				color: rgb(178,178,178);
+			}
+			&>div{
+				width: 25%;
+			}
+		}
+		.show-up{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.scroll-y{
+		position: relative;
+		flex:1
+	}
+	.mui-scroll-wrapper{
+		top: 50px;
+		
+		
+		.mui-scroll-bill:nth-of-type(2){
+			display: none;
+		}
+		.year-click{
+			display: none;
+		}
+		.month-click-total{
+			display: flex;
+			justify-content: space-between;
+		}
+		.mui-slider-handle{
+			display: flex;
+			justify-content: space-between;
+			
+			.delete-left{
+				
+				&>span:nth-of-type(1){
+					display: inline-block;
+					width: 45px;
+					height: 45px;
+					border: 1px solid #fff;
+					border-radius: 50%;
+					line-height: 45px;
+					text-align: center;
+					background: rgb(255,227,68);
+				}
+			}
+			.delete-right{
+				span{
+					line-height: 45px;
+				}
+			}
+		}
+	}
+}
+.add-bill-btn{
+	width: 80px;
+	height: 80px;
+	background: rgb(255,227,68);
+	border-radius: 50%;
+	position: absolute;
+	bottom: 55px;
+	left: 50%;
+	z-index: 99;
+	margin-left: -40px;
+	text-align: center;
+	line-height: 80px;
+	img{
+		margin-top: 18px;
+	}
+}

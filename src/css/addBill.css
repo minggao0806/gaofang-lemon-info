@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+header {
+  height: 120px;
+  background: #ffe344;
+  overflow: hidden; }
+  header .mui-action-back {
+    margin-top: 10px; }
+  header .bill-choose {
+    margin: 10px auto;
+    width: 110px;
+    height: 35px;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 20px;
+    overflow: hidden; }
+    header .bill-choose span {
+      width: 50%;
+      line-height: 35px;
+      text-align: center; }
+    header .bill-choose .active {
+      background: #000000;
+      color: #ffe344; }
+  header .price {
+    width: 95%;
+    margin: 0 auto;
+    height: 50px;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    text-align: center;
+    line-height: 40px; }
+    header .price span {
+      margin: 10px auto;
+      border-right: 1px solid #000;
+      font-size: 32px; }
+
+.mui-content .mui-slider-item {
+  margin-top: 20px; }
+  .mui-content .mui-slider-item div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .mui-content .mui-slider-item div dl {
+      width: 25%;
+      margin-bottom: 25px; }
+      .mui-content .mui-slider-item div dl dt {
+        width: 80%;
+        margin: 0 auto;
+        height: 60px;
+        text-align: center; }
+        .mui-content .mui-slider-item div dl dt span {
+          width: 60px;
+          height: 60px;
+          font-size: 40px;
+          line-height: 60px;
+          text-align: center;
+          border-radius: 50%;
+          background: #c8c8c8; }
+        .mui-content .mui-slider-item div dl dt .active {
+          background: #ffe344; }
+      .mui-content .mui-slider-item div dl dd {
+        margin-top: 10px;
+        text-align: center; }
+
+.mui-content .keyword {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  .mui-content .keyword ul {
+    width: 100%;
+    display: flex;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray; }
+    .mui-content .keyword ul li {
+      width: 25%; }
+      .mui-content .keyword ul li span {
+        height: 44px;
+        line-height: 44px;
+        text-align: center;
+        border-right: 1px solid gray;
+        border-bottom: 1px solid gray;
+        display: block; }
+      .mui-content .keyword ul li:last-child span {
+        height: 176px;
+        line-height: 176px; }
